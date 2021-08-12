@@ -1,5 +1,5 @@
 # OrthoKeymapSVG
-A simple script to generate a keymap of you Planck/Preonioc/Ortho keyboard
+A simple script to generate a keymap of you Planck/Preonic/Ortho keyboard
 It's created in Python, so you'll need that on your system to run the script.
 
 - Download the script [CreateOrthoKeybSVG.py](CreateOrthoKeybSVG.py)

@@ -15,4 +15,7 @@ The new version is created in PowerShell so you'll need that on your system - se
 
 ## This is a sample layout matching my own Planck keymap
 
-![PlanckKeymap](PlanckKeymap.png)
+=======
+![PlanckKeymap](PlanckKeymap.svg)
+
+> > > > > > > d606150e460ae33ba5029d07f57bb94f3877528c

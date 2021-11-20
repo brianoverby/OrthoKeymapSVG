@@ -11,4 +11,4 @@ It's created in Python, so you'll need that on your system to run the script.
     
     
 ## This is a sample layout matching my own Planck keymap
-![PlanckKeymap](PlanckKeymap.png)
+![PlanckKeymap](PlanckKeymap.svg)

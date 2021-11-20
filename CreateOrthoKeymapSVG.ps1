@@ -1,4 +1,4 @@
-# CreateKeymap.ps1
+# CreateOrthoKeymapSVG.ps1
 
 param (
      [Parameter(Mandatory,Position=0)]
@@ -32,10 +32,10 @@ param (
 # For split keyboards this is row and column count for each half minus the thumb cluster
 $keyCapRows = 0
 $keyCapCols = 0
+$mit = $false
 $splitLayout = $false
 $thumbKeys = 0
 $blankKeys = 0
-$mit = $false
 
 # Keycap specs
 $keySpace = 3
@@ -43,6 +43,8 @@ $keyWidth = 40
 $keyHeight = 40
 $charOffset = 4
 $keySplitSpace = 30
+
+$mapSpace = 40
 
 
 switch ($Layout) {
@@ -59,10 +61,22 @@ switch ($Layout) {
 }
 
 
+if($splitLayout)
+{
+    if($thumbKeys -gt 0)
+    {
+        $keyCapRows += 1 # Thumb row is added
+        $blankKeys = $keyCapCols-$thumbKeys
+    }
+    $keyCapCols *= 2 # Print both sides
+}
+
+
 # svg settings
 $vbWitdh = $keyCapCols * ($keyWidth+$keySpace) + $keySpace
-if($splitLayout) { $vbWitdh = ($vbWitdh * 2) + $keySplitSpace }
-$vbHeight = $keyCapRows * ($keyHeight+$keySpace) + $keySpace
+if($splitLayout) { $vbWitdh += $keySplitSpace }
+$vbHeight = ($keyCapRows * ($keyHeight+$keySpace) + $keySpace)
+if($NumberOfKeyMaps -gt 1) { $vbHeight = $vbHeight * $NumberOfKeyMaps + $mapSpace * ($NumberOfKeyMaps-1) }
 
 
 $svgOutput = @'
@@ -114,89 +128,84 @@ $svgOutput += @'
 </style>
 '@
 
-if($splitLayout)
-{
-    if($thumbKeys -gt 0)
-    {
-        $keyCapRows += 1 # Thumb row is added
-        $blankKeys = $keyCapCols-$thumbKeys
-    }
-    $keyCapCols *= 2 # Print both sides
-}
+
 
 # List for keycap svg
 $keyCapList = @()
 
-
-# Loop rows
-for ($r = 0; $r -lt $keyCapRows; $r++)
+for ($n = 0; $n -lt $NumberOfKeyMaps; $n++)
 {
-    $y = ($keySpace + $keyHeight) * $r + $keySpace
-    # Loop columns
-    for ($c = 0; $c -lt $keyCapCols; $c++)
+    $yOffset = $n * ($keyCapRows * ($keyHeight+$keySpace) + $keySpace + $mapSpace)
+    # Loop rows
+    for ($r = 0; $r -lt $keyCapRows; $r++)
     {
-        $x = ($keySpace + $keyWidth) * $c + $keySpace
-        if($splitLayout)
+        $y = ($keySpace + $keyHeight) * $r + $keySpace +  $yOffset
+        # Loop columns
+        for ($c = 0; $c -lt $keyCapCols; $c++)
         {
-            if($c -ge ($keyCapCols/2)) { $x += $keySplitSpace }
-        }
-        $kWidth = $keyWidth
-        if($r -eq ($keyCapRows-1))
-        {
-            # Ortho MIT
-            if($mit)
-            {
-                if($c -eq ($keyCapCols/2)-1) { $kWidth = $keyWidth * 2 + $keySpace }
-                if($c -eq ($keyCapCols/2)) { continue }
-            }
-
-            # Split, thumb row
+            $x = ($keySpace + $keyWidth) * $c + $keySpace
             if($splitLayout)
             {
-                if($c -lt $blankKeys -or $c -ge ($keyCapCols - $blankKeys)) { continue }
+                if($c -ge ($keyCapCols/2)) { $x += $keySplitSpace }
+            }
+            $kWidth = $keyWidth
+            if($r -eq ($keyCapRows-1))
+            {
+                # Ortho MIT
+                if($mit)
+                {
+                    if($c -eq ($keyCapCols/2)-1) { $kWidth = $keyWidth * 2 + $keySpace }
+                    if($c -eq ($keyCapCols/2)) { continue }
+                }
+
+                # Split, thumb row
+                if($splitLayout)
+                {
+                    if($c -lt $blankKeys -or $c -ge ($keyCapCols - $blankKeys)) { continue }
+                }
+            }
+
+            $keyCapList += '<rect rx="4" x="' + $x + '" y="' + $y + '" width="' + $kWidth + '" height="' + $keyHeight + '" class=""/>'
+
+            # Add text templates
+            $xCnt = $x + ($kWidth/2)
+            $yCnt = $y + ($keyHeight/2)
+
+            $yTl = $y + $charOffset
+            $xTl = $x + $charOffset
+
+            $yTr = $yTl
+            $xTr = $x + $kWidth - $charOffset
+
+            $yBl = $y + $keyHeight - $charOffset
+            $xBl = $xTl
+
+            $yBr = $yBl
+            $xBr = $xTr
+
+            if($PrintTextCenter){
+                $rnd = (97..122) | Get-Random | % {[char]$_}
+                $keyCapList += '<text x="' + $xCnt + '" y="' + $yCnt + '" class="cnt">' + $rnd + '</text>'
+            }
+            if($PrintTextTopLeft){
+                $rnd = (97..122) | Get-Random | % {[char]$_}
+                $keyCapList += '<text x="' + $xTl + '" y="' + $yTl + '" class="layer tl">' + $rnd + '</text>'
+            }
+            if($PrintTextTopRight){
+                $rnd = (97..122) | Get-Random | % {[char]$_}
+                $keyCapList += '<text x="' + $xTr + '" y="' + $yTr + '" class="layer tr">' + $rnd + '</text>'
+            }
+            if($PrintTextBottomLeft){
+                $rnd = (97..122) | Get-Random | % {[char]$_}
+                $keyCapList += '<text x="' + $xBl + '" y="' + $yBl + '" class="layer bl">' + $rnd + '</text>'
+            }
+            if($PrintTextBottomRight){
+                $rnd = (97..122) | Get-Random | % {[char]$_}
+                $keyCapList += '<text x="' + $xBr + '" y="' + $yBr + '" class="layer br">' + $rnd + '</text>'
             }
         }
-
-        $keyCapList += '<rect rx="4" x="' + $x + '" y="' + $y + '" width="' + $kWidth + '" height="' + $keyHeight + '" class=""/>'
-
-        # Add text templates
-        $xCnt = $x + ($kWidth/2)
-        $yCnt = $y + ($keyHeight/2)
-
-        $yTl = $y + $charOffset
-        $xTl = $x + $charOffset
-
-        $yTr = $yTl
-        $xTr = $x + $kWidth - $charOffset
-
-        $yBl = $y + $keyHeight - $charOffset
-        $xBl = $xTl
-
-        $yBr = $yBl
-        $xBr = $xTr
-
-        if($PrintTextCenter){
-            $rnd = (97..122) | Get-Random | % {[char]$_}
-            $keyCapList += '<text x="' + $xCnt + '" y="' + $yCnt + '" class="cnt">' + $rnd + '</text>'
-        }
-        if($PrintTextTopLeft){
-            $rnd = (97..122) | Get-Random | % {[char]$_}
-            $keyCapList += '<text x="' + $xTl + '" y="' + $yTl + '" class="layer tl">' + $rnd + '</text>'
-        }
-        if($PrintTextTopRight){
-            $rnd = (97..122) | Get-Random | % {[char]$_}
-            $keyCapList += '<text x="' + $xTr + '" y="' + $yTr + '" class="layer tr">' + $rnd + '</text>'
-        }
-        if($PrintTextBottomLeft){
-            $rnd = (97..122) | Get-Random | % {[char]$_}
-            $keyCapList += '<text x="' + $xBl + '" y="' + $yBl + '" class="layer bl">' + $rnd + '</text>'
-        }
-        if($PrintTextBottomRight){
-            $rnd = (97..122) | Get-Random | % {[char]$_}
-            $keyCapList += '<text x="' + $xBr + '" y="' + $yBr + '" class="layer br">' + $rnd + '</text>'
-        }
+        if($r -lt ($keyCapRows-1)) { $keyCapList += "`n`n" }
     }
-    if($r -lt ($keyCapRows-1)) { $keyCapList += "`n`n" }
 }
 $svgOutput
 $keyCapList

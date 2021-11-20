@@ -1,4 +1,5 @@
 # CreateOrthoKeymapSVG.ps1
+# Brian Overby - https://github.com/brianoverby/OrthoKeymapSVG
 
 param (
      [Parameter(Mandatory,Position=0)]
@@ -24,7 +25,9 @@ param (
      [Parameter()] [Switch]$PrintTextTopRight,
      [Parameter()] [Switch]$PrintTextBottomLeft,
      [Parameter()] [Switch]$PrintTextBottomRight,
-     [Parameter()] [Switch]$PrintTextCenter
+     [Parameter()] [Switch]$PrintTextCenter,
+     [Parameter(Mandatory)] [string]$FileName,
+     [Parameter()] [switch]$ForceOverwrite
  )
 
 
@@ -35,15 +38,20 @@ $keyCapCols = 0
 $mit = $false
 $splitLayout = $false
 $thumbKeys = 0
-$blankKeys = 0
+$blankKeys = 0 # This is calculated later
 
 # Keycap specs
-$keySpace = 3
 $keyWidth = 40
 $keyHeight = 40
-$charOffset = 4
-$keySplitSpace = 30
+$keySpace = 3
 
+# Text offset from the edge of the keycaps
+$charOffset = 4
+
+# Space between the two halves of a split layout
+$keySplitSpace = 30 a
+
+# Space between keymaps
 $mapSpace = 40
 
 
@@ -207,6 +215,33 @@ for ($n = 0; $n -lt $NumberOfKeyMaps; $n++)
         if($r -lt ($keyCapRows-1)) { $keyCapList += "`n`n" }
     }
 }
-$svgOutput
-$keyCapList
-"</svg>"
+
+# print to file
+$output = @()
+foreach($line in $svgOutput)
+{
+    $output += $line
+}
+foreach($line in $keyCapList)
+{
+    $output += $line
+}
+$output += "</svg>"
+
+if((Test-Path -Path $FileName) -and -not $ForceOverwrite)
+{
+    $YesOrNo = Read-Host "File exists, overwrite it? (y/n) -- use -ForceOverwrite to disable this prompt"
+    while("y","n" -notcontains $YesOrNo )
+    {
+        $YesOrNo = Read-Host "File exists, overwrite it? (y/n)"
+    }
+    if($YesOrNo -eq "y")
+    {
+        $output | Out-File -FilePath $FileName -Encoding utf8 -Force
+        "Keymap was written to the file: " + $FileName
+    }
+    else
+    {
+        "No file was written, bye!"
+    }
+}

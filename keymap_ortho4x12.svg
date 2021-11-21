@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 519 175">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 772 260">
 <style>
     svg {
         font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
@@ -8,187 +8,191 @@
         text-rendering: optimizeLegibility;
     }
     rect {
-        fill: rgb(246, 248, 250);
+        fill: #ECEBE9;
     }
     rect.hold {
-        fill: rgb(255, 205, 178);
+        /* class used to indicate key beeing held */
+        fill: #F8C8B4;
     }
     text {
-        font-size: 0.75em;
+        font-size: 1.0em;
         stroke: none;
-        fill: rgb(50,50,50);
+        fill: #403E3B;
     }
     .tl {
+        /* Top-left text */
         text-anchor: start;
         dominant-baseline:hanging;
     }
     .tr {
+        /* Top-right text */
         text-anchor: end;
         dominant-baseline:hanging;
     }
     .bl {
+        /* Bottom-left text */
         text-anchor: start;
     }
     .br {
+        /* Bottom-right text */
         text-anchor: end;
     }
     .cnt {
+        /* Center text */
         text-anchor: middle;
         dominant-baseline:middle;
     }
     .layer {
-        fill: rgb(190, 190, 190);
-        font-size: 0.5em;
+        /* class for all secondary text labels */
+        font-size: 0.7em;
+        fill: #9D9A95;
     }    
 </style>
-<rect rx="4" x="3" y="3" width="40" height="40" class=""/>
-<text x="23" y="23" class="cnt">z</text>
-<text x="39" y="39" class="layer br">w</text>
-<rect rx="4" x="46" y="3" width="40" height="40" class=""/>
-<text x="66" y="23" class="cnt">z</text>
-<text x="82" y="39" class="layer br">r</text>
-<rect rx="4" x="89" y="3" width="40" height="40" class=""/>
-<text x="109" y="23" class="cnt">e</text>
-<text x="125" y="39" class="layer br">r</text>
-<rect rx="4" x="132" y="3" width="40" height="40" class=""/>
-<text x="152" y="23" class="cnt">j</text>
-<text x="168" y="39" class="layer br">v</text>
-<rect rx="4" x="175" y="3" width="40" height="40" class=""/>
-<text x="195" y="23" class="cnt">g</text>
-<text x="211" y="39" class="layer br">w</text>
-<rect rx="4" x="218" y="3" width="40" height="40" class=""/>
-<text x="238" y="23" class="cnt">n</text>
-<text x="254" y="39" class="layer br">k</text>
-<rect rx="4" x="261" y="3" width="40" height="40" class=""/>
-<text x="281" y="23" class="cnt">r</text>
-<text x="297" y="39" class="layer br">r</text>
-<rect rx="4" x="304" y="3" width="40" height="40" class=""/>
-<text x="324" y="23" class="cnt">d</text>
-<text x="340" y="39" class="layer br">f</text>
-<rect rx="4" x="347" y="3" width="40" height="40" class=""/>
-<text x="367" y="23" class="cnt">j</text>
-<text x="383" y="39" class="layer br">y</text>
-<rect rx="4" x="390" y="3" width="40" height="40" class=""/>
-<text x="410" y="23" class="cnt">t</text>
-<text x="426" y="39" class="layer br">t</text>
-<rect rx="4" x="433" y="3" width="40" height="40" class=""/>
-<text x="453" y="23" class="cnt">s</text>
-<text x="469" y="39" class="layer br">c</text>
-<rect rx="4" x="476" y="3" width="40" height="40" class=""/>
-<text x="496" y="23" class="cnt">u</text>
-<text x="512" y="39" class="layer br">r</text>
+<rect rx="4" x="4" y="4" width="60" height="60" class=""/>
+<text x="34" y="34" class="cnt">b</text>
+<text x="59" y="59" class="layer br">f</text>
+<rect rx="4" x="68" y="4" width="60" height="60" class=""/>
+<text x="98" y="34" class="cnt">g</text>
+<text x="123" y="59" class="layer br">h</text>
+<rect rx="4" x="132" y="4" width="60" height="60" class=""/>
+<text x="162" y="34" class="cnt">v</text>
+<text x="187" y="59" class="layer br">j</text>
+<rect rx="4" x="196" y="4" width="60" height="60" class=""/>
+<text x="226" y="34" class="cnt">l</text>
+<text x="251" y="59" class="layer br">k</text>
+<rect rx="4" x="260" y="4" width="60" height="60" class=""/>
+<text x="290" y="34" class="cnt">z</text>
+<text x="315" y="59" class="layer br">r</text>
+<rect rx="4" x="324" y="4" width="60" height="60" class=""/>
+<text x="354" y="34" class="cnt">m</text>
+<text x="379" y="59" class="layer br">r</text>
+<rect rx="4" x="388" y="4" width="60" height="60" class=""/>
+<text x="418" y="34" class="cnt">d</text>
+<text x="443" y="59" class="layer br">z</text>
+<rect rx="4" x="452" y="4" width="60" height="60" class=""/>
+<text x="482" y="34" class="cnt">x</text>
+<text x="507" y="59" class="layer br">g</text>
+<rect rx="4" x="516" y="4" width="60" height="60" class=""/>
+<text x="546" y="34" class="cnt">w</text>
+<text x="571" y="59" class="layer br">x</text>
+<rect rx="4" x="580" y="4" width="60" height="60" class=""/>
+<text x="610" y="34" class="cnt">l</text>
+<text x="635" y="59" class="layer br">m</text>
+<rect rx="4" x="644" y="4" width="60" height="60" class=""/>
+<text x="674" y="34" class="cnt">d</text>
+<text x="699" y="59" class="layer br">i</text>
+<rect rx="4" x="708" y="4" width="60" height="60" class=""/>
+<text x="738" y="34" class="cnt">u</text>
+<text x="763" y="59" class="layer br">h</text>
 
 
-
-<rect rx="4" x="3" y="46" width="40" height="40" class=""/>
-<text x="23" y="66" class="cnt">y</text>
-<text x="39" y="82" class="layer br">m</text>
-<rect rx="4" x="46" y="46" width="40" height="40" class=""/>
-<text x="66" y="66" class="cnt">q</text>
-<text x="82" y="82" class="layer br">s</text>
-<rect rx="4" x="89" y="46" width="40" height="40" class=""/>
-<text x="109" y="66" class="cnt">h</text>
-<text x="125" y="82" class="layer br">a</text>
-<rect rx="4" x="132" y="46" width="40" height="40" class=""/>
-<text x="152" y="66" class="cnt">v</text>
-<text x="168" y="82" class="layer br">a</text>
-<rect rx="4" x="175" y="46" width="40" height="40" class=""/>
-<text x="195" y="66" class="cnt">r</text>
-<text x="211" y="82" class="layer br">o</text>
-<rect rx="4" x="218" y="46" width="40" height="40" class=""/>
-<text x="238" y="66" class="cnt">b</text>
-<text x="254" y="82" class="layer br">o</text>
-<rect rx="4" x="261" y="46" width="40" height="40" class=""/>
-<text x="281" y="66" class="cnt">t</text>
-<text x="297" y="82" class="layer br">v</text>
-<rect rx="4" x="304" y="46" width="40" height="40" class=""/>
-<text x="324" y="66" class="cnt">b</text>
-<text x="340" y="82" class="layer br">f</text>
-<rect rx="4" x="347" y="46" width="40" height="40" class=""/>
-<text x="367" y="66" class="cnt">e</text>
-<text x="383" y="82" class="layer br">u</text>
-<rect rx="4" x="390" y="46" width="40" height="40" class=""/>
-<text x="410" y="66" class="cnt">o</text>
-<text x="426" y="82" class="layer br">z</text>
-<rect rx="4" x="433" y="46" width="40" height="40" class=""/>
-<text x="453" y="66" class="cnt">u</text>
-<text x="469" y="82" class="layer br">z</text>
-<rect rx="4" x="476" y="46" width="40" height="40" class=""/>
-<text x="496" y="66" class="cnt">j</text>
-<text x="512" y="82" class="layer br">a</text>
-
+<rect rx="4" x="4" y="68" width="60" height="60" class=""/>
+<text x="34" y="98" class="cnt">n</text>
+<text x="59" y="123" class="layer br">z</text>
+<rect rx="4" x="68" y="68" width="60" height="60" class=""/>
+<text x="98" y="98" class="cnt">k</text>
+<text x="123" y="123" class="layer br">e</text>
+<rect rx="4" x="132" y="68" width="60" height="60" class=""/>
+<text x="162" y="98" class="cnt">o</text>
+<text x="187" y="123" class="layer br">q</text>
+<rect rx="4" x="196" y="68" width="60" height="60" class=""/>
+<text x="226" y="98" class="cnt">m</text>
+<text x="251" y="123" class="layer br">h</text>
+<rect rx="4" x="260" y="68" width="60" height="60" class=""/>
+<text x="290" y="98" class="cnt">c</text>
+<text x="315" y="123" class="layer br">q</text>
+<rect rx="4" x="324" y="68" width="60" height="60" class=""/>
+<text x="354" y="98" class="cnt">r</text>
+<text x="379" y="123" class="layer br">o</text>
+<rect rx="4" x="388" y="68" width="60" height="60" class=""/>
+<text x="418" y="98" class="cnt">z</text>
+<text x="443" y="123" class="layer br">x</text>
+<rect rx="4" x="452" y="68" width="60" height="60" class=""/>
+<text x="482" y="98" class="cnt">y</text>
+<text x="507" y="123" class="layer br">c</text>
+<rect rx="4" x="516" y="68" width="60" height="60" class=""/>
+<text x="546" y="98" class="cnt">e</text>
+<text x="571" y="123" class="layer br">d</text>
+<rect rx="4" x="580" y="68" width="60" height="60" class=""/>
+<text x="610" y="98" class="cnt">o</text>
+<text x="635" y="123" class="layer br">k</text>
+<rect rx="4" x="644" y="68" width="60" height="60" class=""/>
+<text x="674" y="98" class="cnt">p</text>
+<text x="699" y="123" class="layer br">e</text>
+<rect rx="4" x="708" y="68" width="60" height="60" class=""/>
+<text x="738" y="98" class="cnt">p</text>
+<text x="763" y="123" class="layer br">s</text>
 
 
-<rect rx="4" x="3" y="89" width="40" height="40" class=""/>
-<text x="23" y="109" class="cnt">k</text>
-<text x="39" y="125" class="layer br">p</text>
-<rect rx="4" x="46" y="89" width="40" height="40" class=""/>
-<text x="66" y="109" class="cnt">y</text>
-<text x="82" y="125" class="layer br">d</text>
-<rect rx="4" x="89" y="89" width="40" height="40" class=""/>
-<text x="109" y="109" class="cnt">y</text>
-<text x="125" y="125" class="layer br">a</text>
-<rect rx="4" x="132" y="89" width="40" height="40" class=""/>
-<text x="152" y="109" class="cnt">d</text>
-<text x="168" y="125" class="layer br">s</text>
-<rect rx="4" x="175" y="89" width="40" height="40" class=""/>
-<text x="195" y="109" class="cnt">l</text>
-<text x="211" y="125" class="layer br">i</text>
-<rect rx="4" x="218" y="89" width="40" height="40" class=""/>
-<text x="238" y="109" class="cnt">q</text>
-<text x="254" y="125" class="layer br">d</text>
-<rect rx="4" x="261" y="89" width="40" height="40" class=""/>
-<text x="281" y="109" class="cnt">w</text>
-<text x="297" y="125" class="layer br">s</text>
-<rect rx="4" x="304" y="89" width="40" height="40" class=""/>
-<text x="324" y="109" class="cnt">q</text>
-<text x="340" y="125" class="layer br">k</text>
-<rect rx="4" x="347" y="89" width="40" height="40" class=""/>
-<text x="367" y="109" class="cnt">r</text>
-<text x="383" y="125" class="layer br">s</text>
-<rect rx="4" x="390" y="89" width="40" height="40" class=""/>
-<text x="410" y="109" class="cnt">g</text>
-<text x="426" y="125" class="layer br">c</text>
-<rect rx="4" x="433" y="89" width="40" height="40" class=""/>
-<text x="453" y="109" class="cnt">x</text>
-<text x="469" y="125" class="layer br">b</text>
-<rect rx="4" x="476" y="89" width="40" height="40" class=""/>
-<text x="496" y="109" class="cnt">d</text>
-<text x="512" y="125" class="layer br">g</text>
+<rect rx="4" x="4" y="132" width="60" height="60" class=""/>
+<text x="34" y="162" class="cnt">d</text>
+<text x="59" y="187" class="layer br">z</text>
+<rect rx="4" x="68" y="132" width="60" height="60" class=""/>
+<text x="98" y="162" class="cnt">u</text>
+<text x="123" y="187" class="layer br">s</text>
+<rect rx="4" x="132" y="132" width="60" height="60" class=""/>
+<text x="162" y="162" class="cnt">a</text>
+<text x="187" y="187" class="layer br">i</text>
+<rect rx="4" x="196" y="132" width="60" height="60" class=""/>
+<text x="226" y="162" class="cnt">l</text>
+<text x="251" y="187" class="layer br">s</text>
+<rect rx="4" x="260" y="132" width="60" height="60" class=""/>
+<text x="290" y="162" class="cnt">a</text>
+<text x="315" y="187" class="layer br">y</text>
+<rect rx="4" x="324" y="132" width="60" height="60" class=""/>
+<text x="354" y="162" class="cnt">d</text>
+<text x="379" y="187" class="layer br">d</text>
+<rect rx="4" x="388" y="132" width="60" height="60" class=""/>
+<text x="418" y="162" class="cnt">h</text>
+<text x="443" y="187" class="layer br">v</text>
+<rect rx="4" x="452" y="132" width="60" height="60" class=""/>
+<text x="482" y="162" class="cnt">t</text>
+<text x="507" y="187" class="layer br">t</text>
+<rect rx="4" x="516" y="132" width="60" height="60" class=""/>
+<text x="546" y="162" class="cnt">p</text>
+<text x="571" y="187" class="layer br">r</text>
+<rect rx="4" x="580" y="132" width="60" height="60" class=""/>
+<text x="610" y="162" class="cnt">r</text>
+<text x="635" y="187" class="layer br">i</text>
+<rect rx="4" x="644" y="132" width="60" height="60" class=""/>
+<text x="674" y="162" class="cnt">w</text>
+<text x="699" y="187" class="layer br">r</text>
+<rect rx="4" x="708" y="132" width="60" height="60" class=""/>
+<text x="738" y="162" class="cnt">n</text>
+<text x="763" y="187" class="layer br">i</text>
 
 
-
-<rect rx="4" x="3" y="132" width="40" height="40" class=""/>
-<text x="23" y="152" class="cnt">l</text>
-<text x="39" y="168" class="layer br">v</text>
-<rect rx="4" x="46" y="132" width="40" height="40" class=""/>
-<text x="66" y="152" class="cnt">a</text>
-<text x="82" y="168" class="layer br">w</text>
-<rect rx="4" x="89" y="132" width="40" height="40" class=""/>
-<text x="109" y="152" class="cnt">d</text>
-<text x="125" y="168" class="layer br">q</text>
-<rect rx="4" x="132" y="132" width="40" height="40" class=""/>
-<text x="152" y="152" class="cnt">m</text>
-<text x="168" y="168" class="layer br">g</text>
-<rect rx="4" x="175" y="132" width="40" height="40" class=""/>
-<text x="195" y="152" class="cnt">k</text>
-<text x="211" y="168" class="layer br">j</text>
-<rect rx="4" x="218" y="132" width="83" height="40" class=""/>
-<text x="259.5" y="152" class="cnt">h</text>
-<text x="297" y="168" class="layer br">w</text>
-<rect rx="4" x="304" y="132" width="40" height="40" class=""/>
-<text x="324" y="152" class="cnt">u</text>
-<text x="340" y="168" class="layer br">s</text>
-<rect rx="4" x="347" y="132" width="40" height="40" class=""/>
-<text x="367" y="152" class="cnt">j</text>
-<text x="383" y="168" class="layer br">v</text>
-<rect rx="4" x="390" y="132" width="40" height="40" class=""/>
-<text x="410" y="152" class="cnt">z</text>
-<text x="426" y="168" class="layer br">z</text>
-<rect rx="4" x="433" y="132" width="40" height="40" class=""/>
-<text x="453" y="152" class="cnt">x</text>
-<text x="469" y="168" class="layer br">g</text>
-<rect rx="4" x="476" y="132" width="40" height="40" class=""/>
-<text x="496" y="152" class="cnt">e</text>
-<text x="512" y="168" class="layer br">k</text>
+<rect rx="4" x="4" y="196" width="60" height="60" class=""/>
+<text x="34" y="226" class="cnt">b</text>
+<text x="59" y="251" class="layer br">x</text>
+<rect rx="4" x="68" y="196" width="60" height="60" class=""/>
+<text x="98" y="226" class="cnt">t</text>
+<text x="123" y="251" class="layer br">m</text>
+<rect rx="4" x="132" y="196" width="60" height="60" class=""/>
+<text x="162" y="226" class="cnt">p</text>
+<text x="187" y="251" class="layer br">e</text>
+<rect rx="4" x="196" y="196" width="60" height="60" class=""/>
+<text x="226" y="226" class="cnt">e</text>
+<text x="251" y="251" class="layer br">v</text>
+<rect rx="4" x="260" y="196" width="60" height="60" class=""/>
+<text x="290" y="226" class="cnt">t</text>
+<text x="315" y="251" class="layer br">h</text>
+<rect rx="4" x="324" y="196" width="124" height="60" class=""/>
+<text x="386" y="226" class="cnt">w</text>
+<text x="443" y="251" class="layer br">p</text>
+<rect rx="4" x="452" y="196" width="60" height="60" class=""/>
+<text x="482" y="226" class="cnt">l</text>
+<text x="507" y="251" class="layer br">z</text>
+<rect rx="4" x="516" y="196" width="60" height="60" class=""/>
+<text x="546" y="226" class="cnt">i</text>
+<text x="571" y="251" class="layer br">q</text>
+<rect rx="4" x="580" y="196" width="60" height="60" class=""/>
+<text x="610" y="226" class="cnt">i</text>
+<text x="635" y="251" class="layer br">m</text>
+<rect rx="4" x="644" y="196" width="60" height="60" class=""/>
+<text x="674" y="226" class="cnt">x</text>
+<text x="699" y="251" class="layer br">r</text>
+<rect rx="4" x="708" y="196" width="60" height="60" class=""/>
+<text x="738" y="226" class="cnt">v</text>
+<text x="763" y="251" class="layer br">z</text>
 </svg>

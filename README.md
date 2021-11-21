@@ -48,6 +48,8 @@ There is defined a `hold` class in the css for the svg. It can be used to indica
 
 You can create one keymap with multiple text labels (center and all four corners) or you can create multiple keymaps - one for each layer. Use the `-NumberOfKeyMaps` parameter to specify number of keymaps in the output file.
 
+The default output is a scaleable svg, but you can also get a fixed size output by specifying `-FixedSize` - see sample output.
+
 ## Edit to match your own keymap
 
 After you created the keymap svg template you need to edit the svg file to match your own layout. You can also change the styles (font, colors, size, etc.). The default is light grey for the secondary text labels - but feel free to add a little color like I have done on my Planck keymap.
@@ -66,6 +68,6 @@ After you created the keymap svg template you need to edit the svg file to match
 
 ![keymap_split3x5.svg](keymap_split3x5.svg)
 
-### This is a sample layout matching my own Planck keymap after editing the svg file:
+### My own Boardsource Microdox keymap - this has a fixed size:
 
-![PlanckKeymap](keymap_myPlanck.svg)
+![keymap_microdox](keymap_microdox.svg)

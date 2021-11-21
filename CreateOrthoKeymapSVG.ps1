@@ -27,7 +27,8 @@ param (
      [Parameter()] [Switch]$PrintTextBottomRight,
      [Parameter()] [Switch]$PrintTextCenter,
      [Parameter(Mandatory)] [string]$FileName,
-     [Parameter()] [switch]$ForceOverwrite
+     [Parameter()] [switch]$ForceOverwrite,
+     [Parameter()] [switch]$FixedSize
  )
 
 
@@ -41,15 +42,15 @@ $thumbKeys = 0
 $blankKeys = 0 # This is calculated later
 
 # Keycap specs
-$keyWidth = 40
-$keyHeight = 40
-$keySpace = 3
+$keyWidth = 60
+$keyHeight = 60
+$keySpace = 4
 
 # Text offset from the edge of the keycaps
-$charOffset = 4
+$charOffset = 5
 
 # Space between the two halves of a split layout
-$keySplitSpace = 30
+$keySplitSpace = 40
 
 # Space between keymaps
 $mapSpace = 40
@@ -92,7 +93,12 @@ $svgOutput = @'
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 '@
 
-$svgOutput += "`n"+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + $vbWitdh + ' ' + $vbHeight+ '">' + "`n"
+$svgOutput += "`n"+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ' + $vbWitdh + ' ' + $vbHeight +'"'
+if($FixedSize)
+{
+    $svgOutput += ' width="' + $vbWitdh + '" height="' + $vbHeight + '"'
+}
+$svgOutput += ">`n"
 $svgOutput += @'
 <style>
     svg {
@@ -101,16 +107,16 @@ $svgOutput += @'
         text-rendering: optimizeLegibility;
     }
     rect {
-        fill: rgb(246, 248, 250);
+        fill: #ECEBE9;
     }
     rect.hold {
         /* class used to indicate key beeing held */
-        fill: rgb(255, 205, 178);
+        fill: #F8C8B4;
     }
     text {
-        font-size: 0.75em;
+        font-size: 1.0em;
         stroke: none;
-        fill: rgb(50,50,50);
+        fill: #403E3B;
     }
     .tl {
         /* Top-left text */
@@ -137,8 +143,8 @@ $svgOutput += @'
     }
     .layer {
         /* class for all secondary text labels */
-        fill: rgb(190, 190, 190);
-        font-size: 0.5em;
+        font-size: 0.7em;
+        fill: #9D9A95;
     }    
 </style>
 '@
@@ -219,8 +225,9 @@ for ($n = 0; $n -lt $NumberOfKeyMaps; $n++)
                 $keyCapList += '<text x="' + $xBr + '" y="' + $yBr + '" class="layer br">' + $rnd + '</text>'
             }
         }
-        if($r -lt ($keyCapRows-1)) { $keyCapList += "`n`n" }
+        if($r -lt ($keyCapRows-1)) { $keyCapList += "`n" }
     }
+    if($n -lt ($NumberOfKeyMaps-1)) { $keyCapList += "`n`n`n" }
 }
 
 # print to file
@@ -234,6 +241,7 @@ foreach($line in $keyCapList)
     $output += $line
 }
 $output += "</svg>"
+
 
 if((Test-Path -Path $FileName) -and -not $ForceOverwrite)
 {
@@ -251,4 +259,9 @@ if((Test-Path -Path $FileName) -and -not $ForceOverwrite)
     {
         "No file was written, bye!"
     }
+}
+else
+{
+    $output | Out-File -FilePath $FileName -Encoding utf8 -Force
+    "Keymap was written to the file: " + $FileName
 }

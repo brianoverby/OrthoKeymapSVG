@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 463 390">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 684 560">
 <style>
     svg {
         font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
@@ -8,199 +8,204 @@
         text-rendering: optimizeLegibility;
     }
     rect {
-        fill: rgb(246, 248, 250);
+        fill: #ECEBE9;
     }
     rect.hold {
-        fill: rgb(255, 205, 178);
+        /* class used to indicate key beeing held */
+        fill: #F8C8B4;
     }
     text {
-        font-size: 0.75em;
+        font-size: 1.0em;
         stroke: none;
-        fill: rgb(50,50,50);
+        fill: #403E3B;
     }
     .tl {
+        /* Top-left text */
         text-anchor: start;
         dominant-baseline:hanging;
     }
     .tr {
+        /* Top-right text */
         text-anchor: end;
         dominant-baseline:hanging;
     }
     .bl {
+        /* Bottom-left text */
         text-anchor: start;
     }
     .br {
+        /* Bottom-right text */
         text-anchor: end;
     }
     .cnt {
+        /* Center text */
         text-anchor: middle;
         dominant-baseline:middle;
     }
     .layer {
-        fill: rgb(190, 190, 190);
-        font-size: 0.5em;
+        /* class for all secondary text labels */
+        font-size: 0.7em;
+        fill: #9D9A95;
     }    
 </style>
-<rect rx="4" x="3" y="3" width="40" height="40" class=""/>
-<text x="23" y="23" class="cnt">a</text>
-<rect rx="4" x="46" y="3" width="40" height="40" class=""/>
-<text x="66" y="23" class="cnt">f</text>
-<rect rx="4" x="89" y="3" width="40" height="40" class=""/>
-<text x="109" y="23" class="cnt">k</text>
-<rect rx="4" x="132" y="3" width="40" height="40" class=""/>
-<text x="152" y="23" class="cnt">r</text>
-<rect rx="4" x="175" y="3" width="40" height="40" class=""/>
-<text x="195" y="23" class="cnt">j</text>
-<rect rx="4" x="248" y="3" width="40" height="40" class=""/>
-<text x="268" y="23" class="cnt">b</text>
-<rect rx="4" x="291" y="3" width="40" height="40" class=""/>
-<text x="311" y="23" class="cnt">w</text>
-<rect rx="4" x="334" y="3" width="40" height="40" class=""/>
-<text x="354" y="23" class="cnt">m</text>
-<rect rx="4" x="377" y="3" width="40" height="40" class=""/>
-<text x="397" y="23" class="cnt">x</text>
-<rect rx="4" x="420" y="3" width="40" height="40" class=""/>
-<text x="440" y="23" class="cnt">t</text>
+<rect rx="4" x="4" y="4" width="60" height="60" class=""/>
+<text x="34" y="34" class="cnt">l</text>
+<rect rx="4" x="68" y="4" width="60" height="60" class=""/>
+<text x="98" y="34" class="cnt">q</text>
+<rect rx="4" x="132" y="4" width="60" height="60" class=""/>
+<text x="162" y="34" class="cnt">k</text>
+<rect rx="4" x="196" y="4" width="60" height="60" class=""/>
+<text x="226" y="34" class="cnt">w</text>
+<rect rx="4" x="260" y="4" width="60" height="60" class=""/>
+<text x="290" y="34" class="cnt">g</text>
+<rect rx="4" x="364" y="4" width="60" height="60" class=""/>
+<text x="394" y="34" class="cnt">h</text>
+<rect rx="4" x="428" y="4" width="60" height="60" class=""/>
+<text x="458" y="34" class="cnt">x</text>
+<rect rx="4" x="492" y="4" width="60" height="60" class=""/>
+<text x="522" y="34" class="cnt">q</text>
+<rect rx="4" x="556" y="4" width="60" height="60" class=""/>
+<text x="586" y="34" class="cnt">n</text>
+<rect rx="4" x="620" y="4" width="60" height="60" class=""/>
+<text x="650" y="34" class="cnt">r</text>
+
+
+<rect rx="4" x="4" y="68" width="60" height="60" class=""/>
+<text x="34" y="98" class="cnt">u</text>
+<rect rx="4" x="68" y="68" width="60" height="60" class=""/>
+<text x="98" y="98" class="cnt">k</text>
+<rect rx="4" x="132" y="68" width="60" height="60" class=""/>
+<text x="162" y="98" class="cnt">m</text>
+<rect rx="4" x="196" y="68" width="60" height="60" class=""/>
+<text x="226" y="98" class="cnt">j</text>
+<rect rx="4" x="260" y="68" width="60" height="60" class=""/>
+<text x="290" y="98" class="cnt">a</text>
+<rect rx="4" x="364" y="68" width="60" height="60" class=""/>
+<text x="394" y="98" class="cnt">s</text>
+<rect rx="4" x="428" y="68" width="60" height="60" class=""/>
+<text x="458" y="98" class="cnt">a</text>
+<rect rx="4" x="492" y="68" width="60" height="60" class=""/>
+<text x="522" y="98" class="cnt">z</text>
+<rect rx="4" x="556" y="68" width="60" height="60" class=""/>
+<text x="586" y="98" class="cnt">b</text>
+<rect rx="4" x="620" y="68" width="60" height="60" class=""/>
+<text x="650" y="98" class="cnt">o</text>
+
+
+<rect rx="4" x="4" y="132" width="60" height="60" class=""/>
+<text x="34" y="162" class="cnt">l</text>
+<rect rx="4" x="68" y="132" width="60" height="60" class=""/>
+<text x="98" y="162" class="cnt">u</text>
+<rect rx="4" x="132" y="132" width="60" height="60" class=""/>
+<text x="162" y="162" class="cnt">k</text>
+<rect rx="4" x="196" y="132" width="60" height="60" class=""/>
+<text x="226" y="162" class="cnt">z</text>
+<rect rx="4" x="260" y="132" width="60" height="60" class=""/>
+<text x="290" y="162" class="cnt">q</text>
+<rect rx="4" x="364" y="132" width="60" height="60" class=""/>
+<text x="394" y="162" class="cnt">v</text>
+<rect rx="4" x="428" y="132" width="60" height="60" class=""/>
+<text x="458" y="162" class="cnt">w</text>
+<rect rx="4" x="492" y="132" width="60" height="60" class=""/>
+<text x="522" y="162" class="cnt">h</text>
+<rect rx="4" x="556" y="132" width="60" height="60" class=""/>
+<text x="586" y="162" class="cnt">n</text>
+<rect rx="4" x="620" y="132" width="60" height="60" class=""/>
+<text x="650" y="162" class="cnt">z</text>
+
+
+<rect rx="4" x="132" y="196" width="60" height="60" class=""/>
+<text x="162" y="226" class="cnt">f</text>
+<rect rx="4" x="196" y="196" width="60" height="60" class=""/>
+<text x="226" y="226" class="cnt">d</text>
+<rect rx="4" x="260" y="196" width="60" height="60" class=""/>
+<text x="290" y="226" class="cnt">a</text>
+<rect rx="4" x="364" y="196" width="60" height="60" class=""/>
+<text x="394" y="226" class="cnt">s</text>
+<rect rx="4" x="428" y="196" width="60" height="60" class=""/>
+<text x="458" y="226" class="cnt">a</text>
+<rect rx="4" x="492" y="196" width="60" height="60" class=""/>
+<text x="522" y="226" class="cnt">m</text>
 
 
 
-<rect rx="4" x="3" y="46" width="40" height="40" class=""/>
-<text x="23" y="66" class="cnt">t</text>
-<rect rx="4" x="46" y="46" width="40" height="40" class=""/>
-<text x="66" y="66" class="cnt">u</text>
-<rect rx="4" x="89" y="46" width="40" height="40" class=""/>
-<text x="109" y="66" class="cnt">d</text>
-<rect rx="4" x="132" y="46" width="40" height="40" class=""/>
-<text x="152" y="66" class="cnt">j</text>
-<rect rx="4" x="175" y="46" width="40" height="40" class=""/>
-<text x="195" y="66" class="cnt">f</text>
-<rect rx="4" x="248" y="46" width="40" height="40" class=""/>
-<text x="268" y="66" class="cnt">f</text>
-<rect rx="4" x="291" y="46" width="40" height="40" class=""/>
-<text x="311" y="66" class="cnt">o</text>
-<rect rx="4" x="334" y="46" width="40" height="40" class=""/>
-<text x="354" y="66" class="cnt">e</text>
-<rect rx="4" x="377" y="46" width="40" height="40" class=""/>
-<text x="397" y="66" class="cnt">k</text>
-<rect rx="4" x="420" y="46" width="40" height="40" class=""/>
-<text x="440" y="66" class="cnt">h</text>
+
+<rect rx="4" x="4" y="304" width="60" height="60" class=""/>
+<text x="34" y="334" class="cnt">f</text>
+<rect rx="4" x="68" y="304" width="60" height="60" class=""/>
+<text x="98" y="334" class="cnt">u</text>
+<rect rx="4" x="132" y="304" width="60" height="60" class=""/>
+<text x="162" y="334" class="cnt">i</text>
+<rect rx="4" x="196" y="304" width="60" height="60" class=""/>
+<text x="226" y="334" class="cnt">i</text>
+<rect rx="4" x="260" y="304" width="60" height="60" class=""/>
+<text x="290" y="334" class="cnt">y</text>
+<rect rx="4" x="364" y="304" width="60" height="60" class=""/>
+<text x="394" y="334" class="cnt">c</text>
+<rect rx="4" x="428" y="304" width="60" height="60" class=""/>
+<text x="458" y="334" class="cnt">t</text>
+<rect rx="4" x="492" y="304" width="60" height="60" class=""/>
+<text x="522" y="334" class="cnt">e</text>
+<rect rx="4" x="556" y="304" width="60" height="60" class=""/>
+<text x="586" y="334" class="cnt">w</text>
+<rect rx="4" x="620" y="304" width="60" height="60" class=""/>
+<text x="650" y="334" class="cnt">y</text>
 
 
-
-<rect rx="4" x="3" y="89" width="40" height="40" class=""/>
-<text x="23" y="109" class="cnt">n</text>
-<rect rx="4" x="46" y="89" width="40" height="40" class=""/>
-<text x="66" y="109" class="cnt">y</text>
-<rect rx="4" x="89" y="89" width="40" height="40" class=""/>
-<text x="109" y="109" class="cnt">d</text>
-<rect rx="4" x="132" y="89" width="40" height="40" class=""/>
-<text x="152" y="109" class="cnt">g</text>
-<rect rx="4" x="175" y="89" width="40" height="40" class=""/>
-<text x="195" y="109" class="cnt">p</text>
-<rect rx="4" x="248" y="89" width="40" height="40" class=""/>
-<text x="268" y="109" class="cnt">s</text>
-<rect rx="4" x="291" y="89" width="40" height="40" class=""/>
-<text x="311" y="109" class="cnt">p</text>
-<rect rx="4" x="334" y="89" width="40" height="40" class=""/>
-<text x="354" y="109" class="cnt">u</text>
-<rect rx="4" x="377" y="89" width="40" height="40" class=""/>
-<text x="397" y="109" class="cnt">x</text>
-<rect rx="4" x="420" y="89" width="40" height="40" class=""/>
-<text x="440" y="109" class="cnt">l</text>
-
+<rect rx="4" x="4" y="368" width="60" height="60" class=""/>
+<text x="34" y="398" class="cnt">y</text>
+<rect rx="4" x="68" y="368" width="60" height="60" class=""/>
+<text x="98" y="398" class="cnt">w</text>
+<rect rx="4" x="132" y="368" width="60" height="60" class=""/>
+<text x="162" y="398" class="cnt">a</text>
+<rect rx="4" x="196" y="368" width="60" height="60" class=""/>
+<text x="226" y="398" class="cnt">t</text>
+<rect rx="4" x="260" y="368" width="60" height="60" class=""/>
+<text x="290" y="398" class="cnt">x</text>
+<rect rx="4" x="364" y="368" width="60" height="60" class=""/>
+<text x="394" y="398" class="cnt">g</text>
+<rect rx="4" x="428" y="368" width="60" height="60" class=""/>
+<text x="458" y="398" class="cnt">i</text>
+<rect rx="4" x="492" y="368" width="60" height="60" class=""/>
+<text x="522" y="398" class="cnt">j</text>
+<rect rx="4" x="556" y="368" width="60" height="60" class=""/>
+<text x="586" y="398" class="cnt">r</text>
+<rect rx="4" x="620" y="368" width="60" height="60" class=""/>
+<text x="650" y="398" class="cnt">t</text>
 
 
-<rect rx="4" x="89" y="132" width="40" height="40" class=""/>
-<text x="109" y="152" class="cnt">e</text>
-<rect rx="4" x="132" y="132" width="40" height="40" class=""/>
-<text x="152" y="152" class="cnt">e</text>
-<rect rx="4" x="175" y="132" width="40" height="40" class=""/>
-<text x="195" y="152" class="cnt">c</text>
-<rect rx="4" x="248" y="132" width="40" height="40" class=""/>
-<text x="268" y="152" class="cnt">z</text>
-<rect rx="4" x="291" y="132" width="40" height="40" class=""/>
-<text x="311" y="152" class="cnt">b</text>
-<rect rx="4" x="334" y="132" width="40" height="40" class=""/>
-<text x="354" y="152" class="cnt">d</text>
-<rect rx="4" x="3" y="218" width="40" height="40" class=""/>
-<text x="23" y="238" class="cnt">y</text>
-<rect rx="4" x="46" y="218" width="40" height="40" class=""/>
-<text x="66" y="238" class="cnt">g</text>
-<rect rx="4" x="89" y="218" width="40" height="40" class=""/>
-<text x="109" y="238" class="cnt">f</text>
-<rect rx="4" x="132" y="218" width="40" height="40" class=""/>
-<text x="152" y="238" class="cnt">t</text>
-<rect rx="4" x="175" y="218" width="40" height="40" class=""/>
-<text x="195" y="238" class="cnt">d</text>
-<rect rx="4" x="248" y="218" width="40" height="40" class=""/>
-<text x="268" y="238" class="cnt">z</text>
-<rect rx="4" x="291" y="218" width="40" height="40" class=""/>
-<text x="311" y="238" class="cnt">t</text>
-<rect rx="4" x="334" y="218" width="40" height="40" class=""/>
-<text x="354" y="238" class="cnt">u</text>
-<rect rx="4" x="377" y="218" width="40" height="40" class=""/>
-<text x="397" y="238" class="cnt">a</text>
-<rect rx="4" x="420" y="218" width="40" height="40" class=""/>
-<text x="440" y="238" class="cnt">w</text>
+<rect rx="4" x="4" y="432" width="60" height="60" class=""/>
+<text x="34" y="462" class="cnt">w</text>
+<rect rx="4" x="68" y="432" width="60" height="60" class=""/>
+<text x="98" y="462" class="cnt">d</text>
+<rect rx="4" x="132" y="432" width="60" height="60" class=""/>
+<text x="162" y="462" class="cnt">h</text>
+<rect rx="4" x="196" y="432" width="60" height="60" class=""/>
+<text x="226" y="462" class="cnt">h</text>
+<rect rx="4" x="260" y="432" width="60" height="60" class=""/>
+<text x="290" y="462" class="cnt">h</text>
+<rect rx="4" x="364" y="432" width="60" height="60" class=""/>
+<text x="394" y="462" class="cnt">j</text>
+<rect rx="4" x="428" y="432" width="60" height="60" class=""/>
+<text x="458" y="462" class="cnt">w</text>
+<rect rx="4" x="492" y="432" width="60" height="60" class=""/>
+<text x="522" y="462" class="cnt">t</text>
+<rect rx="4" x="556" y="432" width="60" height="60" class=""/>
+<text x="586" y="462" class="cnt">y</text>
+<rect rx="4" x="620" y="432" width="60" height="60" class=""/>
+<text x="650" y="462" class="cnt">m</text>
 
 
-
-<rect rx="4" x="3" y="261" width="40" height="40" class=""/>
-<text x="23" y="281" class="cnt">o</text>
-<rect rx="4" x="46" y="261" width="40" height="40" class=""/>
-<text x="66" y="281" class="cnt">s</text>
-<rect rx="4" x="89" y="261" width="40" height="40" class=""/>
-<text x="109" y="281" class="cnt">o</text>
-<rect rx="4" x="132" y="261" width="40" height="40" class=""/>
-<text x="152" y="281" class="cnt">v</text>
-<rect rx="4" x="175" y="261" width="40" height="40" class=""/>
-<text x="195" y="281" class="cnt">r</text>
-<rect rx="4" x="248" y="261" width="40" height="40" class=""/>
-<text x="268" y="281" class="cnt">c</text>
-<rect rx="4" x="291" y="261" width="40" height="40" class=""/>
-<text x="311" y="281" class="cnt">j</text>
-<rect rx="4" x="334" y="261" width="40" height="40" class=""/>
-<text x="354" y="281" class="cnt">r</text>
-<rect rx="4" x="377" y="261" width="40" height="40" class=""/>
-<text x="397" y="281" class="cnt">l</text>
-<rect rx="4" x="420" y="261" width="40" height="40" class=""/>
-<text x="440" y="281" class="cnt">w</text>
-
-
-
-<rect rx="4" x="3" y="304" width="40" height="40" class=""/>
-<text x="23" y="324" class="cnt">w</text>
-<rect rx="4" x="46" y="304" width="40" height="40" class=""/>
-<text x="66" y="324" class="cnt">p</text>
-<rect rx="4" x="89" y="304" width="40" height="40" class=""/>
-<text x="109" y="324" class="cnt">q</text>
-<rect rx="4" x="132" y="304" width="40" height="40" class=""/>
-<text x="152" y="324" class="cnt">k</text>
-<rect rx="4" x="175" y="304" width="40" height="40" class=""/>
-<text x="195" y="324" class="cnt">y</text>
-<rect rx="4" x="248" y="304" width="40" height="40" class=""/>
-<text x="268" y="324" class="cnt">o</text>
-<rect rx="4" x="291" y="304" width="40" height="40" class=""/>
-<text x="311" y="324" class="cnt">c</text>
-<rect rx="4" x="334" y="304" width="40" height="40" class=""/>
-<text x="354" y="324" class="cnt">p</text>
-<rect rx="4" x="377" y="304" width="40" height="40" class=""/>
-<text x="397" y="324" class="cnt">u</text>
-<rect rx="4" x="420" y="304" width="40" height="40" class=""/>
-<text x="440" y="324" class="cnt">w</text>
-
-
-
-<rect rx="4" x="89" y="347" width="40" height="40" class=""/>
-<text x="109" y="367" class="cnt">o</text>
-<rect rx="4" x="132" y="347" width="40" height="40" class=""/>
-<text x="152" y="367" class="cnt">q</text>
-<rect rx="4" x="175" y="347" width="40" height="40" class=""/>
-<text x="195" y="367" class="cnt">e</text>
-<rect rx="4" x="248" y="347" width="40" height="40" class=""/>
-<text x="268" y="367" class="cnt">r</text>
-<rect rx="4" x="291" y="347" width="40" height="40" class=""/>
-<text x="311" y="367" class="cnt">o</text>
-<rect rx="4" x="334" y="347" width="40" height="40" class="hold"/>
-<text x="354" y="367" class="cnt">x</text>
+<rect rx="4" x="132" y="496" width="60" height="60" class=""/>
+<text x="162" y="526" class="cnt">d</text>
+<rect rx="4" x="196" y="496" width="60" height="60" class=""/>
+<text x="226" y="526" class="cnt">k</text>
+<rect rx="4" x="260" y="496" width="60" height="60" class=""/>
+<text x="290" y="526" class="cnt">j</text>
+<rect rx="4" x="364" y="496" width="60" height="60" class=""/>
+<text x="394" y="526" class="cnt">i</text>
+<rect rx="4" x="428" y="496" width="60" height="60" class=""/>
+<text x="458" y="526" class="cnt">f</text>
+<rect rx="4" x="492" y="496" width="60" height="60" class=""/>
+<text x="522" y="526" class="cnt">c</text>
 </svg>

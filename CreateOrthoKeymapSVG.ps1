@@ -49,7 +49,7 @@ $keySpace = 3
 $charOffset = 4
 
 # Space between the two halves of a split layout
-$keySplitSpace = 30 a
+$keySplitSpace = 30
 
 # Space between keymaps
 $mapSpace = 40
@@ -80,7 +80,7 @@ if($splitLayout)
 }
 
 
-# svg settings
+# svg viewbox
 $vbWitdh = $keyCapCols * ($keyWidth+$keySpace) + $keySpace
 if($splitLayout) { $vbWitdh += $keySplitSpace }
 $vbHeight = ($keyCapRows * ($keyHeight+$keySpace) + $keySpace)
@@ -104,6 +104,7 @@ $svgOutput += @'
         fill: rgb(246, 248, 250);
     }
     rect.hold {
+        /* class used to indicate key beeing held */
         fill: rgb(255, 205, 178);
     }
     text {
@@ -112,24 +113,30 @@ $svgOutput += @'
         fill: rgb(50,50,50);
     }
     .tl {
+        /* Top-left text */
         text-anchor: start;
         dominant-baseline:hanging;
     }
     .tr {
+        /* Top-right text */
         text-anchor: end;
         dominant-baseline:hanging;
     }
     .bl {
+        /* Bottom-left text */
         text-anchor: start;
     }
     .br {
+        /* Bottom-right text */
         text-anchor: end;
     }
     .cnt {
+        /* Center text */
         text-anchor: middle;
         dominant-baseline:middle;
     }
     .layer {
+        /* class for all secondary text labels */
         fill: rgb(190, 190, 190);
         font-size: 0.5em;
     }    

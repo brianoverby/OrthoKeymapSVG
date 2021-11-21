@@ -4,7 +4,7 @@ A script to generate a keymap for your Planck/Preonic/ortho/split ortho keyboard
 ~~It's created in Python, so you'll need that on your system to run the script.~~
 The new version is created in PowerShell so you'll need that on your system - see the following guide on [how to install PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.2).
 
-The old Python version is not maintained any more, but still available [OldCreateOrthoKeymapSVG.py](OldCreateOrthoKeymapSVG.py).
+_The old Python version is not maintained any more, but still available [OldCreateOrthoKeymapSVG.py](OldCreateOrthoKeymapSVG.py)_
 
 ## Download the script
 

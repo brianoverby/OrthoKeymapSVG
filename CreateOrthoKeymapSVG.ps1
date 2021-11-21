@@ -118,34 +118,34 @@ $svgOutput += @'
         stroke: none;
         fill: #403E3B;
     }
-    .tl {
+    text.layer {
+        /* class for all secondary text labels */
+        font-size: 0.7em;
+        fill: #9D9A95;
+    }
+    text.tl {
         /* Top-left text */
         text-anchor: start;
         dominant-baseline:hanging;
     }
-    .tr {
+    text.tr {
         /* Top-right text */
         text-anchor: end;
         dominant-baseline:hanging;
     }
-    .bl {
+    text.bl {
         /* Bottom-left text */
         text-anchor: start;
     }
-    .br {
+    text.br {
         /* Bottom-right text */
         text-anchor: end;
     }
-    .cnt {
+    text.cnt {
         /* Center text */
         text-anchor: middle;
         dominant-baseline:middle;
     }
-    .layer {
-        /* class for all secondary text labels */
-        font-size: 0.7em;
-        fill: #9D9A95;
-    }    
 </style>
 '@
 

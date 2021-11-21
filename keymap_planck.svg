@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 772 260">
+<style>
+    svg {
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+        font-kerning: normal;
+        text-rendering: optimizeLegibility;
+    }
+    rect {
+        fill: #ECEBE9;
+    }
+    rect.hold {
+        /* class used to indicate key beeing held */
+        fill: #F8C8B4;
+    }
+    text {
+        font-size: 1.0em;
+        stroke: none;
+        fill: #403E3B;
+    }
+    text.layer {
+        /* class for all secondary text labels */
+        font-size: 0.7em;
+        fill: #9D9A95;
+    }  
+    text.tl {
+        /* Top-left text */
+        text-anchor: start;
+        dominant-baseline:hanging;
+    }
+    text.tr {
+        /* Top-right text */
+        text-anchor: end;
+        dominant-baseline:hanging;
+        fill: #f4a261;
+    }
+    text.bl {
+        /* Bottom-left text */
+        text-anchor: start;
+        fill: #1EABE8;
+    }
+    text.br {
+        /* Bottom-right text */
+        text-anchor: end;
+        fill: #5FCC54;
+    }
+    text.cnt {
+        /* Center text */
+        text-anchor: middle;
+        dominant-baseline:middle;
+    }
+  
+</style>
+<rect rx="4" x="4" y="4" width="60" height="60" class=""/>
+<text x="34" y="34" class="cnt">tab</text>
+<text x="9" y="9" class="layer tl"></text>
+<text x="59" y="9" class="layer tr">`</text>
+<text x="9" y="59" class="layer bl">~</text>
+<text x="59" y="59" class="layer br"></text>
+<rect rx="4" x="68" y="4" width="60" height="60" class=""/>
+<text x="98" y="34" class="cnt">q</text>
+<text x="73" y="9" class="layer tl"></text>
+<text x="123" y="9" class="layer tr">1</text>
+<text x="73" y="59" class="layer bl">!</text>
+<text x="123" y="59" class="layer br"></text>
+<rect rx="4" x="132" y="4" width="60" height="60" class=""/>
+<text x="162" y="34" class="cnt">w</text>
+<text x="137" y="9" class="layer tl"></text>
+<text x="187" y="9" class="layer tr">2</text>
+<text x="137" y="59" class="layer bl">@</text>
+<text x="187" y="59" class="layer br"></text>
+<rect rx="4" x="196" y="4" width="60" height="60" class=""/>
+<text x="226" y="34" class="cnt">e</text>
+<text x="201" y="9" class="layer tl"></text>
+<text x="251" y="9" class="layer tr">3</text>
+<text x="201" y="59" class="layer bl">#</text>
+<text x="251" y="59" class="layer br"></text>
+<rect rx="4" x="260" y="4" width="60" height="60" class=""/>
+<text x="290" y="34" class="cnt">r</text>
+<text x="265" y="9" class="layer tl"></text>
+<text x="315" y="9" class="layer tr">4</text>
+<text x="265" y="59" class="layer bl">$</text>
+<text x="315" y="59" class="layer br"></text>
+<rect rx="4" x="324" y="4" width="60" height="60" class=""/>
+<text x="354" y="34" class="cnt">t</text>
+<text x="329" y="9" class="layer tl"></text>
+<text x="379" y="9" class="layer tr">5</text>
+<text x="329" y="59" class="layer bl">%</text>
+<text x="379" y="59" class="layer br"></text>
+<rect rx="4" x="388" y="4" width="60" height="60" class=""/>
+<text x="418" y="34" class="cnt">y</text>
+<text x="393" y="9" class="layer tl"></text>
+<text x="443" y="9" class="layer tr">6</text>
+<text x="393" y="59" class="layer bl">^</text>
+<text x="443" y="59" class="layer br"></text>
+<rect rx="4" x="452" y="4" width="60" height="60" class=""/>
+<text x="482" y="34" class="cnt">u</text>
+<text x="457" y="9" class="layer tl"></text>
+<text x="507" y="9" class="layer tr">7</text>
+<text x="457" y="59" class="layer bl">&amp;</text>
+<text x="507" y="59" class="layer br"></text>
+<rect rx="4" x="516" y="4" width="60" height="60" class=""/>
+<text x="546" y="34" class="cnt">i</text>
+<text x="521" y="9" class="layer tl"></text>
+<text x="571" y="9" class="layer tr">8</text>
+<text x="521" y="59" class="layer bl">*</text>
+<text x="571" y="59" class="layer br">ins</text>
+<rect rx="4" x="580" y="4" width="60" height="60" class=""/>
+<text x="610" y="34" class="cnt">o</text>
+<text x="585" y="9" class="layer tl"></text>
+<text x="635" y="9" class="layer tr">9</text>
+<text x="585" y="59" class="layer bl">(</text>
+<text x="635" y="59" class="layer br"></text>
+<rect rx="4" x="644" y="4" width="60" height="60" class=""/>
+<text x="674" y="34" class="cnt">p</text>
+<text x="649" y="9" class="layer tl"></text>
+<text x="699" y="9" class="layer tr">0</text>
+<text x="649" y="59" class="layer bl">)</text>
+<text x="699" y="59" class="layer br">prsc</text>
+<rect rx="4" x="708" y="4" width="60" height="60" class=""/>
+<text x="738" y="34" class="cnt">bksp</text>
+<text x="713" y="9" class="layer tl"></text>
+<text x="763" y="9" class="layer tr"></text>
+<text x="713" y="59" class="layer bl"></text>
+<text x="763" y="59" class="layer br">å</text>
+
+
+<rect rx="4" x="4" y="68" width="60" height="60" class=""/>
+<text x="34" y="98" class="cnt">esc</text>
+<text x="9" y="73" class="layer tl"></text>
+<text x="59" y="73" class="layer tr"></text>
+<text x="9" y="123" class="layer bl"></text>
+<text x="59" y="123" class="layer br">del</text>
+<rect rx="4" x="68" y="68" width="60" height="60" class=""/>
+<text x="98" y="98" class="cnt">a</text>
+<text x="73" y="73" class="layer tl"></text>
+<text x="123" y="73" class="layer tr">f1</text>
+<text x="73" y="123" class="layer bl">f1</text>
+<text x="123" y="123" class="layer br"></text>
+<rect rx="4" x="132" y="68" width="60" height="60" class=""/>
+<text x="162" y="98" class="cnt">s</text>
+<text x="137" y="73" class="layer tl"></text>
+<text x="187" y="73" class="layer tr">f2</text>
+<text x="137" y="123" class="layer bl">f2</text>
+<text x="187" y="123" class="layer br"></text>
+<rect rx="4" x="196" y="68" width="60" height="60" class=""/>
+<text x="226" y="98" class="cnt">d</text>
+<text x="201" y="73" class="layer tl"></text>
+<text x="251" y="73" class="layer tr">f3</text>
+<text x="201" y="123" class="layer bl">f3</text>
+<text x="251" y="123" class="layer br"></text>
+<rect rx="4" x="260" y="68" width="60" height="60" class=""/>
+<text x="290" y="98" class="cnt">f</text>
+<text x="265" y="73" class="layer tl"></text>
+<text x="315" y="73" class="layer tr">f4</text>
+<text x="265" y="123" class="layer bl">f4</text>
+<text x="315" y="123" class="layer br"></text>
+<rect rx="4" x="324" y="68" width="60" height="60" class=""/>
+<text x="354" y="98" class="cnt">g</text>
+<text x="329" y="73" class="layer tl"></text>
+<text x="379" y="73" class="layer tr">f5</text>
+<text x="329" y="123" class="layer bl">f5</text>
+<text x="379" y="123" class="layer br"></text>
+<rect rx="4" x="388" y="68" width="60" height="60" class=""/>
+<text x="418" y="98" class="cnt">h</text>
+<text x="393" y="73" class="layer tl"></text>
+<text x="443" y="73" class="layer tr">f6</text>
+<text x="393" y="123" class="layer bl">f6</text>
+<text x="443" y="123" class="layer br"></text>
+<rect rx="4" x="452" y="68" width="60" height="60" class=""/>
+<text x="482" y="98" class="cnt">j</text>
+<text x="457" y="73" class="layer tl"></text>
+<text x="507" y="73" class="layer tr"></text>
+<text x="457" y="123" class="layer bl">_</text>
+<text x="507" y="123" class="layer br"></text>
+<rect rx="4" x="516" y="68" width="60" height="60" class=""/>
+<text x="546" y="98" class="cnt">k</text>
+<text x="521" y="73" class="layer tl"></text>
+<text x="571" y="73" class="layer tr"></text>
+<text x="521" y="123" class="layer bl">+</text>
+<text x="571" y="123" class="layer br"></text>
+<rect rx="4" x="580" y="68" width="60" height="60" class=""/>
+<text x="610" y="98" class="cnt">l</text>
+<text x="585" y="73" class="layer tl"></text>
+<text x="635" y="73" class="layer tr"></text>
+<text x="585" y="123" class="layer bl">{</text>
+<text x="635" y="123" class="layer br"></text>
+<rect rx="4" x="644" y="68" width="60" height="60" class=""/>
+<text x="674" y="98" class="cnt">;</text>
+<text x="649" y="73" class="layer tl"></text>
+<text x="699" y="73" class="layer tr"></text>
+<text x="649" y="123" class="layer bl">}</text>
+<text x="699" y="123" class="layer br">æ</text>
+<rect rx="4" x="708" y="68" width="60" height="60" class=""/>
+<text x="738" y="98" class="cnt">'</text>
+<text x="713" y="73" class="layer tl"></text>
+<text x="763" y="73" class="layer tr">¨</text>
+<text x="713" y="123" class="layer bl">´</text>
+<text x="763" y="123" class="layer br">ø</text>
+
+
+<rect rx="4" x="4" y="132" width="60" height="60" class=""/>
+<text x="34" y="162" class="cnt">shift</text>
+<text x="9" y="137" class="layer tl"></text>
+<text x="59" y="137" class="layer tr"></text>
+<text x="9" y="187" class="layer bl"></text>
+<text x="59" y="187" class="layer br"></text>
+<rect rx="4" x="68" y="132" width="60" height="60" class=""/>
+<text x="98" y="162" class="cnt">z</text>
+<text x="73" y="137" class="layer tl"></text>
+<text x="123" y="137" class="layer tr">f7</text>
+<text x="73" y="187" class="layer bl">f7</text>
+<text x="123" y="187" class="layer br"></text>
+<rect rx="4" x="132" y="132" width="60" height="60" class=""/>
+<text x="162" y="162" class="cnt">x</text>
+<text x="137" y="137" class="layer tl"></text>
+<text x="187" y="137" class="layer tr">f8</text>
+<text x="137" y="187" class="layer bl">f8</text>
+<text x="187" y="187" class="layer br"></text>
+<rect rx="4" x="196" y="132" width="60" height="60" class=""/>
+<text x="226" y="162" class="cnt">c</text>
+<text x="201" y="137" class="layer tl"></text>
+<text x="251" y="137" class="layer tr">f9</text>
+<text x="201" y="187" class="layer bl">f9</text>
+<text x="251" y="187" class="layer br"></text>
+<rect rx="4" x="260" y="132" width="60" height="60" class=""/>
+<text x="290" y="162" class="cnt">v</text>
+<text x="265" y="137" class="layer tl"></text>
+<text x="315" y="137" class="layer tr">f10</text>
+<text x="265" y="187" class="layer bl">f10</text>
+<text x="315" y="187" class="layer br"></text>
+<rect rx="4" x="324" y="132" width="60" height="60" class=""/>
+<text x="354" y="162" class="cnt">b</text>
+<text x="329" y="137" class="layer tl"></text>
+<text x="379" y="137" class="layer tr">f11</text>
+<text x="329" y="187" class="layer bl">f11</text>
+<text x="379" y="187" class="layer br"></text>
+<rect rx="4" x="388" y="132" width="60" height="60" class=""/>
+<text x="418" y="162" class="cnt">n</text>
+<text x="393" y="137" class="layer tl"></text>
+<text x="443" y="137" class="layer tr">f12</text>
+<text x="393" y="187" class="layer bl">f12</text>
+<text x="443" y="187" class="layer br"></text>
+<rect rx="4" x="452" y="132" width="60" height="60" class=""/>
+<text x="482" y="162" class="cnt">m</text>
+<text x="457" y="137" class="layer tl"></text>
+<text x="507" y="137" class="layer tr"></text>
+<text x="457" y="187" class="layer bl">-</text>
+<text x="507" y="187" class="layer br"></text>
+<rect rx="4" x="516" y="132" width="60" height="60" class=""/>
+<text x="546" y="162" class="cnt">,</text>
+<text x="521" y="137" class="layer tl"></text>
+<text x="571" y="137" class="layer tr"></text>
+<text x="521" y="187" class="layer bl">=</text>
+<text x="571" y="187" class="layer br"></text>
+<rect rx="4" x="580" y="132" width="60" height="60" class=""/>
+<text x="610" y="162" class="cnt">.</text>
+<text x="585" y="137" class="layer tl"></text>
+<text x="635" y="137" class="layer tr"></text>
+<text x="585" y="187" class="layer bl">[</text>
+<text x="635" y="187" class="layer br"></text>
+<rect rx="4" x="644" y="132" width="60" height="60" class=""/>
+<text x="674" y="162" class="cnt">up</text>
+<text x="649" y="137" class="layer tl"></text>
+<text x="699" y="137" class="layer tr">volup</text>
+<text x="649" y="187" class="layer bl">]</text>
+<text x="699" y="187" class="layer br">pgup</text>
+<rect rx="4" x="708" y="132" width="60" height="60" class=""/>
+<text x="738" y="162" class="cnt">enter</text>
+<text x="713" y="137" class="layer tl"></text>
+<text x="763" y="137" class="layer tr"></text>
+<text x="713" y="187" class="layer bl"></text>
+<text x="763" y="187" class="layer br">del</text>
+
+
+<rect rx="4" x="4" y="196" width="60" height="60" class="" style="fill: #5FCC54;"/>
+<text x="34" y="226" class="cnt">fn</text>
+<text x="9" y="201" class="layer tl"></text>
+<text x="59" y="201" class="layer tr"></text>
+<text x="9" y="251" class="layer bl"></text>
+<text x="59" y="251" class="layer br"></text>
+<rect rx="4" x="68" y="196" width="60" height="60" class=""/>
+<text x="98" y="226" class="cnt">ctrl</text>
+<text x="73" y="201" class="layer tl"></text>
+<text x="123" y="201" class="layer tr"></text>
+<text x="73" y="251" class="layer bl"></text>
+<text x="123" y="251" class="layer br"></text>
+<rect rx="4" x="132" y="196" width="60" height="60" class=""/>
+<text x="162" y="226" class="cnt">opt</text>
+<text x="137" y="201" class="layer tl"></text>
+<text x="187" y="201" class="layer tr"></text>
+<text x="137" y="251" class="layer bl"></text>
+<text x="187" y="251" class="layer br"></text>
+<rect rx="4" x="196" y="196" width="60" height="60" class=""/>
+<text x="226" y="226" class="cnt">cmd</text>
+<text x="201" y="201" class="layer tl"></text>
+<text x="251" y="201" class="layer tr"></text>
+<text x="201" y="251" class="layer bl"></text>
+<text x="251" y="251" class="layer br"></text>
+<rect rx="4" x="260" y="196" width="60" height="60" class="" style="fill: #1EABE8;"/>
+<text x="290" y="226" class="cnt">lower</text>
+<text x="265" y="201" class="layer tl"></text>
+<text x="315" y="201" class="layer tr"></text>
+<text x="265" y="251" class="layer bl"></text>
+<text x="315" y="251" class="layer br"></text>
+<rect rx="4" x="324" y="196" width="124" height="60" class=""/>
+<text x="386" y="226" class="cnt"></text>
+<text x="329" y="201" class="layer tl"></text>
+<text x="443" y="201" class="layer tr"></text>
+<text x="329" y="251" class="layer bl"></text>
+<text x="443" y="251" class="layer br"></text>
+<rect rx="4" x="452" y="196" width="60" height="60" class="" style="fill: #f4a261;"/>
+<text x="482" y="226" class="cnt">raise</text>
+<text x="457" y="201" class="layer tl"></text>
+<text x="507" y="201" class="layer tr"></text>
+<text x="457" y="251" class="layer bl"></text>
+<text x="507" y="251" class="layer br"></text>
+<rect rx="4" x="516" y="196" width="60" height="60" class=""/>
+<text x="546" y="226" class="cnt">/</text>
+<text x="521" y="201" class="layer tl"></text>
+<text x="571" y="201" class="layer tr"></text>
+<text x="521" y="251" class="layer bl">\</text>
+<text x="571" y="251" class="layer br"></text>
+<rect rx="4" x="580" y="196" width="60" height="60" class=""/>
+<text x="610" y="226" class="cnt">left</text>
+<text x="585" y="201" class="layer tl"></text>
+<text x="635" y="201" class="layer tr">next</text>
+<text x="585" y="251" class="layer bl">|</text>
+<text x="635" y="251" class="layer br">home</text>
+<rect rx="4" x="644" y="196" width="60" height="60" class=""/>
+<text x="674" y="226" class="cnt">down</text>
+<text x="649" y="201" class="layer tl"></text>
+<text x="699" y="201" class="layer tr">voldn</text>
+<text x="649" y="251" class="layer bl"></text>
+<text x="699" y="251" class="layer br">pgdn</text>
+<rect rx="4" x="708" y="196" width="60" height="60" class=""/>
+<text x="738" y="226" class="cnt">right</text>
+<text x="713" y="201" class="layer tl"></text>
+<text x="763" y="201" class="layer tr">play</text>
+<text x="713" y="251" class="layer bl"></text>
+<text x="763" y="251" class="layer br">end</text>
+</svg>

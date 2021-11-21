@@ -68,6 +68,10 @@ After you created the keymap svg template you need to edit the svg file to match
 
 ![keymap_split3x5.svg](keymap_split3x5.svg)
 
+### My own Planck keyboard MIT layout - changed the styles a bit:
+
+![keymap_planck.svg](keymap_planck.svg)
+
 ### My own Boardsource Microdox keymap - this has a fixed size:
 
-![keymap_microdox](keymap_microdox.svg)
+![keymap_microdox.svg](keymap_microdox.svg)

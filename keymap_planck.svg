@@ -8,7 +8,9 @@
         text-rendering: optimizeLegibility;
     }
     rect {
-        fill: #ECEBE9;
+        fill: #ffffff;
+        stroke: #9D9A95;
+        stroke-width: 0.3;
     }
     rect.hold {
         /* class used to indicate key beeing held */

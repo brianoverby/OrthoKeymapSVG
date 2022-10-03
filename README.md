@@ -1,5 +1,9 @@
 # OrthoKeymapSVG
 
+__UPDATE:__ I have created a new PowerShell script for keymap creation based on json input file with your keyboard layout [Create-KeymapSVG](https://github.com/brianoverby/keymapSVG)    
+    
+
+
 A script to generate a keymap for your Planck/Preonic/ortho/split ortho keyboard.
 ~~It's created in Python, so you'll need that on your system to run the script.~~
 The new version is created in PowerShell so you'll need that on your system - see the following guide on [how to install PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.2).
